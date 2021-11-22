@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-main {
+  height: 30px;
+  width: 100%;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+#header-main h1 {
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  width: 200px;
+}
+
+.topo {
+    width: 100%;
+    margin-top: 20%;
+}
+
+label,
+option,
+select,
+textarea {
+  display: block;
+}
+form {
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  resize: none;
+}
+
+textarea {
+  margin: 0 auto;
+}
+
+select {
+  margin: 0px auto 15px;
+}
+button {
+  background: black;
+  color: white;
+  border: none;
+  width: 100px;
+  padding: 7px 0px;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  margin-top: 10px;
+}
+
+
+
+h3::first-letter {
+  color:tomato;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset textarea:focus {
+  background-color: rgba(101, 102, 101, 0.308);
+}
+
+fieldset label:nth-child(2) {
+  color: rgba(0, 0, 0, 0.952);
+}
+fieldset input[type="nome"]:disabled {
+  background: rgb(204, 150, 51);
+}
+
+
+/* ANIMAÇÕES */
+
+input,
+select {
+    transition: all 400ms ease;
+}
+
+input:hover,
+select:hover {
+    transform: scale(1.2);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color:tomato;
+  color: white;
+  cursor: pointer;
+}

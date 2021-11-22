@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body header {
+    background-color:rgb(61, 61, 61);
+    grid-area: header;   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family:'Cairo', sans-serif;
+    font-size: 25px;
+    height: 100px;
+    
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 500px;
+}
+
+body aside {
+
+    background-color:rgb(120, 124, 131);
+    grid-area: aside;
+    height: 100%;
+    color: white;
+    align-items:initial;
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    text-decoration: none;
+    padding-top: 2.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    font-family:'Cairo', sans-serif;
+    
+    
+}
+
+li {
+    list-style-type: none; 
+}
+
+body main {
+background-color: rgb(255, 254, 255);
+grid-area: main;
+justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.conteudo {
+width: 1000px;
+
+
+
+}
+
+body footer {
+    background-color:rgb(67, 67, 68);
+    grid-area: footer;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    color:rgb(248, 239, 239)
+   
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+
+}
+
+
+

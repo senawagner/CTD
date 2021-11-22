@@ -1,0 +1,26 @@
+header {
+  height: 50px;
+  background: black;
+}
+
+header h2 {
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 0;
+}
+
+.banner {
+  height: calc(100vh - 50px);
+  background: orange;
+}
+
+.filmes h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.filme {
+  background: gray;
+  height: 100px;
+}

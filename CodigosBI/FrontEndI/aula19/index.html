@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/mesa19.css">
+
+  <title>Aula 19 Caixas Flexíveis (flexbox)</title>
+</head>
+
+<body>
+  <header>
+    <div id="left">
+      <div id="logo">
+        <img src="./img/logo.jpg" alt="">      
+        <h1>dhprime video</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Séries</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Infantil</a></li>
+          <li><a href="#">Canais</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="rigth">
+      <div id="search">
+        <input type="text" placeholder="Busca">
+      </div>
+
+      <div id="profile">
+        <img src="./img/foto.jpeg" width="40px" height=""alt="">
+        <h2>Wagner</h2>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section id="listaFilmes">
+      <div class="filme" onclick="redirect('black-widow')"> <!-- Onclick - tag padrão do HTML para executar função ao clicar no elemento -->
+        <div class="image">
+            <img src="./img/viuva.jpg" alt="Poster de filme">
+          </div>
+
+          <div class="sombra"></div>
+
+          <div class="text">
+            <h2>Black Widow</h2>
+            <h3>100 visualizações</h3>
+            <p>Veja no concorrente</p>
+          </div>
+        </div>
+
+      <div class="filme" onclick="redirect('venom')">
+        <div class="image">
+          <img src="./img/venom.jpg" alt="Poster de filme">
+        </div>
+
+        <div class="sombra"></div>
+
+        <div class="text">
+          <h2>Venom</h2>
+          <h3>100 visualizações</h3>
+          <p>Veja no concorrente</p>
+        </div>
+    </div>
+
+    <div class="filme" onclick="redirect('oldguard')">
+        <div class="image">
+          <img src="./img/oldguard.jpg" alt="Poster de filme">
+        </div>
+
+        <div class="sombra"></div>
+
+        <div class="text">
+          <h2>Old Guard</h2>
+          <h3>100 visualizações</h3>
+          <p>Veja no concorrente</p>
+        </div>
+    </div>
+
+    <div class="filme" onclick="redirect('aladim')">
+        <div class="image">
+          <img src="./img/aladin.jpg" alt="Poster de filme">
+        </div>
+        <div class="sombra"></div>
+        <div class="text">
+          <h2>Aladin</h2>
+          <h3>100 visualizações</h3>
+          <p>Veja no concorrente</p>
+        </div>
+    </div>
+
+    <div class="filme" onclick="redirect('avatar')">
+      <div class="image">
+        <img src="./img/avatar.jpg" alt="Poster de filme">
+      </div>
+      <div class="sombra"></div>
+      <div class="text">
+        <h2>Avatar</h2>
+        <h3>100 visualizações</h3>
+        <p>Veja no concorrente</p>
+      </div>
+  </div>
+
+  <div class="filme" onclick="redirect('jungle')">
+    <div class="image">
+      <img src="./img/jungle.jpg" alt="Poster de filme">
+    </div>
+    <div class="sombra"></div>
+    <div class="text">
+      <h2>Jungle Cruise</h2>
+      <h3>100 visualizações</h3>
+      <p>Veja no concorrente</p>
+    </div>
+</div>
+
+<div class="filme" onclick="redirect('monster')">
+  <div class="image">
+    <img src="./img/monsters.jpg" alt="Poster de filme">
+  </div>
+  <div class="sombra"></div>
+  <div class="text">
+    <h2>Love and Monsters</h2>
+    <h3>100 visualizações</h3>
+    <p>Veja no concorrente</p>
+  </div>
+</div>
+
+<div class="filme" onclick="redirect('dragons')">
+  <div class="image">
+    <img src="./img/dragons.jpg" alt="Poster de filme">
+  </div>
+  <div class="sombra"></div>
+  <div class="text">
+    <h2>Dungeons & Dragons</h2>
+    <h3>100 visualizações</h3>
+    <p>Veja no concorrente</p>
+  </div>
+</div>
+
+<div class="filme" onclick="redirect('infinite')">
+  <div class="image">
+    <img src="./img/infinite.jpg" alt="Poster de filme">
+  </div>
+  <div class="sombra"></div>
+  <div class="text">
+    <h2>Infinite</h2>
+    <h3>100 visualizações</h3>
+    <p>Veja no concorrente</p>
+  </div>
+</div>
+
+    </section>
+  </main>
+</body>
+<br>
+
+<footer>
+  <div id="foot">
+    <img src="./img/logo.jpg"width= "70px" alt="">      
+    <h3>dhprime video</h3>
+  
+   <p><span class="parcial"> Termos e aviso de privacidade Enviar feedback Socorro!</span><span class="parcial2"> © 2021-2021, Amazonia.com.br, Inc. ou suas comparsas</span></p>
+  </div>
+</footer>
+
+<script>
+  function redirect(url) {
+    window.open('https://www.primevideo.com/'+url, '_blank');
+  };
+</script>
+
+
+
+</html>

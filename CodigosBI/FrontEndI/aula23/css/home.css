@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 5.625rem;
+}
+
+:root{
+  --corRosa: #fddada;
+  --corBlue: #075364;
+  --corPreta: #000000;
+  --corBranca: #ffffff;
+  --corCinza: #6e6363;
+}
+
+body{
+  font-family:'Gluten', serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background: var(--corRosa);
+  color: var(--corBlue);
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--corBlue);
+  padding: .6rem;
+  font-weight: bold;
+  transition: all .5s ease-in-out;
+  border: none;
+}
+
+header a:hover{
+  box-shadow: white;
+  background-color:var(--corBlue);
+  color:white;
+}
+
+#banner{
+  padding-top: 80px;
+  height: calc(100vh);
+  background: #69B7C9;
+
+  display: flex;
+  align-items: center;
+}
+
+#banner img {
+  width: 100%;
+}
+
+.depoimentos{
+  width: 100%;
+  background: var(--corRosa);
+}
+
+.depoimentos img {
+  width: 100%;  
+}
+
+
+
+h2, h3{
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+
+
+
+
+#dogs{
+  margin-top: 2rem;
+}
+
+
+
+
+main{
+  padding: .937rem 3.75rem;
+  background-color: #249ab4;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.125rem;
+  text-align: center;
+}
+
+.pet-sty img{
+  height: 30rem;
+  width: 100%;
+      
+}
+
+
+
+
+.pet-style img{
+  height: 21.875rem;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+  border-radius: 15px;
+}
+
+h2 {
+  color: white;
+  font-size: 1.9rem;
+}
+
+.image-container{
+  height: 21.875rem;
+  width: 100%;
+  /* border: 10px groove var(--corCinza); */
+  overflow: hidden;
+}
+
+.pet-style img:hover{
+  transform: scale(0.8);
+  transition: .5s ease;
+  /* backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto; */
+}
+
+
+/* .pet-sty img:hover{
+  height: 30rem;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  } */
+
+
+.button-header{
+  padding: .5rem 1rem;  
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.button-header:hover {
+  transition: all .6s ease-in-out;
+  background-color: var(--color-orange);
+  color: white;
+}
+
+#dogs + #cats{
+  margin-top: 3.75rem;
+}
+
+/* ####### Responsividade ####### */
+
+@media(min-width: 786px) and (max-width: 1065px){
+  .card-grid{
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 785px){
+  .card-grid{
+      grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 344px) and (max-width: 492px){
+  header{
+      lex-direction: column;
+  }
+  header h1{
+      margin-bottom: 1.25rem;
+  }
+  header li{
+      margin-bottom: .625rem;
+  }
+}
+
+@media(max-width: 343px){
+  header li a{
+       padding: .312rem;
+  }
+
+  main{
+     padding: .93rem 1.875rem;
+  }
+}
+
+footer{
+  text-align: center;
+  color: white;
+  background-color: var(--corBlue);
+  padding: 2rem;
+}

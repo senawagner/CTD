@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #3A98ED;
+    --bg-header: #3E5A73;
+    --header-height: 8rem;
+    /* --color-orange: #F0963C; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+/* MAIN */
+
+#arrow-icon {
+    width: 4rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: all 200ms ease;
+}
+
+main {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    background-color: var(--bg-header);
+    width: 60%;
+    border-radius: 4rem;
+    padding: 1.5rem 4rem;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+fieldset {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+select {
+    display: block;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+/* .idade label,
+.interesses label {
+    display: inline-block;
+} */
+
+button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 4rem;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    transition: all 200ms ease;
+}
+
+/* ANIMAÇÕES */
+
+input,
+select {
+    transition: all 400ms ease;
+}
+
+input:hover,
+select:hover {
+    transform: scale(1.05);
+}
+
+#arrow-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--color-orange);
+    color: white;
+}

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+}
+  
+#header-main {
+    height: 30px;
+    width: 100%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+#header-main h1 {
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+
+.caixa-1{
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+}
+
+.caixa-2{
+    width: 100px;
+    height: 100px;
+    border: solid black 3px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    padding: 35px;
+}
+
+.caixa-3{
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+
+}
+
+.caixa-4{
+    width: 100px;
+    height: 100px;
+    border: solid black 3px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    text-align: center;
+    padding: 35px;
+
+}
+
+.caixa-5{
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    position: fixed;
+    bottom: 0px;
+    left: 40%;
+}
+.caixa-6{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    position: absolute;
+    bottom: 50px;
+    left: 24%;
+    text-align: center;
+    padding: 35px;
+}

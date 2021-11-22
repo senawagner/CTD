@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+  background-color: #0F171E;
+  
+
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #051e29;
+  color: white;
+  padding: 15px 50px;
+}
+
+#logo{
+  height: 50px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img {
+  width:80px;
+  margin-bottom: -10px;
+}
+
+#logo h1{
+  font-size: 20px;
+}
+
+header h1::first-letter{
+  color: rgb(116, 139, 9);
+  display: block;
+}
+
+header ul{
+  display: flex;
+}
+
+header ul li{
+  margin-left: 4px;
+  list-style-type: none;
+}
+
+header li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: lighter;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover{
+  background-color: #0e4b68;
+}
+
+#rigth{
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+
+#left{
+  display: flex;
+  align-items:center;
+}
+
+#search{
+  margin-right: 10px;
+}
+
+#search input {
+  background: transparent;
+  border: 1px solid #a5a5a563;
+  padding: 10px;
+  outline: none;
+  color: white;
+}
+
+#profile{
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  
+  
+}
+
+#profile img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+#profile h2{
+  font-size: 17px;
+}
+
+.logo{
+  display: flex;
+}
+
+main {
+  display: flex;
+  justify-content:center;
+  
+ 
+}
+
+#listaFilmes{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  width: 1000px;
+  
+  /* display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 15px; */
+}
+
+.filme{
+  width: 313px;
+  height: 165px;
+  margin: 10px;
+  position: relative; /* Indica para .sombra que a posição dela deve ser referente ao .filme */
+}
+
+.filme .image {
+  width: 100%;
+  height: 165px;
+  overflow: hidden; /* Esconder todo conteúdo que vazar dos limites definidos pelo width e height */
+  z-index: 1;
+}
+
+.filme img{
+  width: 100%;
+}
+
+.filme .text{
+  color: white;
+  margin-top: -85px; /* Puxar o texto para cima da imagem definindo o margin-top negativo */
+  padding: 10px;
+  z-index: 3;
+}
+
+.filme h3 {
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.filme p {
+  font-size: 12px;
+}
+
+.sombra {
+  position: absolute; /* Posicionamento livre na tela (Neste caso por estar dentro do .filme e definir o position relative lá = posicionamento livre no .filme) */
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgb(0 0 0 / 80%) 37%, rgba(0,0,0,0) 100%); /* Gerar gradiente para CSS https://cssgradient.io/ */
+  z-index: 2; /* Definir a profundidade do elemento na página */ 
+  bottom: 0; /* Indica que o elemento deve se iniciar 0px a partir do bottom (de baixo) */
+}
+
+#foot {
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+
+}
+
+.parcial{
+  color:#79b8f3;
+    word-spacing: 4px;
+}
+
+.parcial2{
+  color:#8197a4;
+    word-spacing: 4px;
+}

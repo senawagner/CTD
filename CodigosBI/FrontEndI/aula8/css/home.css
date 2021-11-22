@@ -1,0 +1,61 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+#banner{
+
+height: 300px;
+background-repeat: no-repeat;
+
+}
+
+
+header {
+background-color: black;
+color: white;
+
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+background:  #131313;
+background-color: black;
+
+}
+
+.media-picture {
+background-image: url(../img/vingadores.jpg);
+width: 100%;
+height: 400px;
+background-size:cover;
+background-position:top ;
+
+}
+
+.review-score {
+padding: 12px;
+background-color:#e6bd09;
+color: white;
+
+}
+
+h1 {
+color: white;
+font-family: Roboto, sans-serif;
+
+}
+
+h2 {
+color: steelblue;
+
+}
+
+a {
+color: yellow;
+}
+
+p {
+color: #bdbdbd;
+font-family: Roboto, sans-serif;
+}
+

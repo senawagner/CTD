@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/home.css" />
+        <link rel="shortcut icon" href="./img/maletinha.png" type="image/x-icon">
+        <title>Checkpoint2</title>
+    </head>
+    <body>
+        <main>
+            <a href="https://kantutamolina.github.io/Meucheckpoint1FE/">
+                <img id="arrow-icon" src="./img/return-arrow.png" alt="Seta de retorno">
+            </a>
+            <div class="container">
+                <section>
+                    <h2>Receba mais informações</h2>
+                </section>
+    
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Dados Pessoais:</legend>
+                        <label for="nome">Nome: </label>
+                        <input
+                            type="text"
+                            name="nome"
+                            id="nome"
+                            required
+                            placeholder="Digite seu nome"
+                        />
+    
+                        <label for="email">E-mail: </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="Digite seu e-mail"
+                        />
+    
+                        <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            name="telefone"
+                            id="telefone"
+                            placeholder="Digite seu telefone"
+                        />
+    
+                        <label for="data">Data de nascimento: </label>
+                        <input type="date" name="data" id="data" required />
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Faixa etária</legend>
+    
+                        <div class="idade">
+                            <input id="idademenor" type="radio" name="idade" />
+                            <label for="idademenor">Menor de idade</label>
+                            <input
+                                id="idademaior"
+                                type="radio"
+                                name="idade"
+                                checked
+                            />
+                            <label for="idademaior">Maior de idade</label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Pontos turísticos</legend>
+                        <div class="pontos-tur">
+                            <select name="PontosTur" id="PontosTur">
+                                <option value="">Selecione uma opção</option>
+                                <option value="Caminho Niemeyer">Caminho Niemeyer</option>
+                                <option value="Museu de Arte Contemporânea (MAC)">Museu de Arte Contemporânea (MAC)</option>
+                                <option value="Ilha da Boa Viagem">Ilha da Boa Viagem</option>
+                                <option value="Praias de Niterói">Praias de Niterói</option>
+                                <option value="Parque da Cidade de Niterói">Parque da Cidade de Niterói</option>
+                            </select>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Interesses na cidade</legend>
+                        <div class="interesses">
+                            <input id="Turista" type="checkbox" />
+                            <label for="Turista">Turista</label>
+                            <input id="Residente" type="checkbox" />
+                            <label for="Residente">Residente</label>
+                            <input id="Estudante" type="checkbox" />
+                            <label for="Estudante">Estudante</label>
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
